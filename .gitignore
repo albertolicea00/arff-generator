@@ -1,0 +1,47 @@
+# ───────────── OS ─────────────
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ───────────── Python ─────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ───────────── Editores ─────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ───────────── Output ─────────────
+# *.arff
