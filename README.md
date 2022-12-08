@@ -2,6 +2,11 @@
 
 *Read this in [Español](README.es.md).*
 
+![Python](https://img.shields.io/badge/Python-3.6%2B-3776AB?logo=python&logoColor=white)
+![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
+![Format](https://img.shields.io/badge/format-ARFF-orange)
+![Weka](https://img.shields.io/badge/Weka-compatible-blueviolet)
+
 An **ARFF** (*Attribute-Relation File Format* — the dataset format used by [Weka](https://www.cs.waikato.ac.nz/ml/weka/)) file generator that produces randomized data from the attributes and values you define.
 
 Handy for quickly creating test datasets without writing the `.arff` by hand.
@@ -96,3 +101,7 @@ Each `set*` validates the input type and raises an exception if it is wrong (e.g
 
 - `simpleconsole.py` ships with `datas = 10000000` by default — would generate a huge file. Adjust that value before running it.
 - The classification attribute name is always `class`; `randomize()` adds it automatically from `setClass()`.
+
+---
+
+Created by [@albertolicea00](https://github.com/albertolicea00)
