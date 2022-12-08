@@ -41,7 +41,7 @@ Run:
 python main.py
 ```
 
-Generates `prueba.arff` in the current directory. If the file already exists, it is overwritten.
+Generates `output/prueba.arff`. The `output/` folder is created automatically; if the file already exists, it is overwritten.
 
 ## Example output
 

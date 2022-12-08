@@ -5,7 +5,7 @@ ES: Versión script standalone (sin clase). Misma lógica que arffGenerator.rand
     pero configurada con variables al inicio — edítalas y ejecuta.
 """
 
-import random
+import os, random
 
 
 
@@ -27,9 +27,13 @@ attributes = [
 
 
 
+# EN: export into ./output (created if missing) / ES: exporta en ./output (se crea si no existe)
+outDir = "output"
+os.makedirs(outDir, exist_ok=True)
+
 # EN: write the .arff file: header, @attribute declarations, then @data rows
 # ES: genera el archivo .arff: cabecera, declaraciones @attribute y filas @data
-with open (file=relacion+".arff" , mode="w+") as file:
+with open (file=os.path.join(outDir, relacion + ".arff"), mode="w+") as file:
 	# EN: @relation header 
 	# ES: cabecera @relation
 	file.write(f"@relation {relacion}\n\n")

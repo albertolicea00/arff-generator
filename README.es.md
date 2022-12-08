@@ -41,7 +41,7 @@ Ejecuta:
 python main.py
 ```
 
-Genera `prueba.arff` en el directorio actual. Si el archivo ya existe, lo sobrescribe.
+Genera `output/prueba.arff`. La carpeta `output/` se crea automáticamente; si el archivo ya existe, lo sobrescribe.
 
 ## Salida de ejemplo
 

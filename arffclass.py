@@ -44,11 +44,17 @@ class arffGenerator():
 		"""
 		self.setAttribute("class", self.__class)
 
-		if os.path.exists(self.__fileName):
-			os.remove(self.__fileName)
+		# EN: export into ./output (created if missing) 
+		# ES: exporta en ./output (se crea si no existe)
+		outDir = "output"
+		os.makedirs(outDir, exist_ok=True)
+		outPath = os.path.join(outDir, self.__fileName)
+
+		if os.path.exists(outPath):
+			os.remove(outPath)
 
 		try:
-			with open (file=self.__fileName, mode="w+") as file:
+			with open (file=outPath, mode="w+") as file:
 				# EN: @relation header / ES: cabecera @relation
 				file.write(f"@relation {self.__relation}\n\n")
 
